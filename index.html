@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Calculator</title>
+  <title>Online Restaurant Order</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Calculator</h1>
+    <h1>Restaurant Order</h1>
     <form id="survey">
       <div class="form-group">
         <label for="name">Full Name:</label>
@@ -21,10 +21,36 @@
         <input id="address" class="form-control" type="text">
       </div>
 
+      <label for="beverage">beverages</label>
+      <select class="form-control" id="beverage">
+        <option value="0">None</option>
+        <option value="3.99">Tea $3.99</option>
+        <option value="7.99">Kombucha $7.99</option>
+        <option value="4.99">Water $4.99</option>
+      </select>
+
+      <label for="entree">entree</label>
+      <select class="form-control" id="entree">
+        <option value="0">None</option>
+        <option value="8.99">Lasagne $8.99</option>
+        <option value="6.99">Kabobs $6.99</option>
+        <option value="10.99">Sandwich $10.99</option>
+      </select>
+
+      <label for="dessert">dessert</label>
+      <select class="form-control" id="dessert">
+        <option value="0">None</option>
+        <option value="4.99">Ice Cream $4.99</option>
+        <option value="15.99">Cake $15.99</option>
+        <option value="5.99">Mochi $5.99</option>
+      </select>
+
       <button type="submit" class="btn">Submit</button>
     </form>
 
-    <div id="output"></div>
+    <div id="output1"></div>
+
+    <div id="output2"></div>
   </div>
 </body>
 </html>

@@ -3,7 +3,8 @@ $(document).ready(function() {
     event.preventDefault();
     const fullname = $("#name").val();
     const fulladdress = $("#address").val();
-    result = "thank you, " + fullname + " at " + fulladdress; 
-    $("#output").text(result);
+    const cost = parseFloat($("#beverage").val())+parseFloat($("#entree").val())+parseFloat($("#dessert").val());
+    $("#output1").text("Thank you, " + fullname + ". Your total is $" + cost);
+    $("#output2").text("Your order will be shipped to " + fulladdress);
   });
 });
